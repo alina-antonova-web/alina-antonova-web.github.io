@@ -31,12 +31,12 @@ $(document).ready(function() {
 
 		$.ajax({
 			type: "POST",
-			url: "php/mail.php",
+			url: "https://alina-web.000webhostapp.com/php/mail_from_githubForm.php",
 			data: string,
 
 			success: function(html){
 				$("#contact-form").slideUp(800);
-				$('#answer').html(html);
+				$('#answer').html("<div class='contact-form__success'>Форма отправлена успешно!</div>");
 			}
 		});
 
